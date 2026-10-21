@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main()
 {
     int a = 20;
@@ -20,6 +21,12 @@ int main()
     p2 = p1;
 
     printf("\npointer 2 value %p \n",p2);
-    printf("pointer 2 pointed value %d \n",*p2);
+    printf("pointer 2 pointed value %d \n\n",*p2);
+
+    *p2 = 30;
+    printf("\npointer 2 value %p \n",p2);
+    printf("pointer 1 pointed value %d \n\n",*p1);
+    printf("pointer 2 pointed value %d \n\n",*p2);
+    printf("Value of A after chaing *p2 change %d \n",a);
 
 }
